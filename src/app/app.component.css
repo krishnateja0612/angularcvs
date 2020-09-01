@@ -1,0 +1,91 @@
+
+table{
+  background-color: aliceblue;
+  margin: auto;
+  width: 98%;
+  border: black;
+  border-collapse: collapse;
+}
+.todays-change{
+  color: grey;
+  font-size: 15px ;
+}
+.account-th{
+  background-color: #e0e0e0;
+  border-right: 1px solid grey;
+  width: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+.available-th{
+  background-color: #b0b0b0;
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+/*.textal{*/
+/*  text-align: center;*/
+/*  text-decoration-color: black;*/
+/*  background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg');*/
+/*  background-position: 0% 100%;*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*  color: black;*/
+/*  text-shadow: black 0.3em 0.3em 0.3em;*/
+
+
+/*}*/
+.data-td{
+  border-bottom: 1px solid grey;
+  padding: 5px;
+}
+.acc-td{
+  color: blue;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+}
+.align-right{
+  text-align: right;
+}
+.align-center{
+ text-align: center;
+}
+.align-left{
+  text-align: left;
+}
+
+body{
+  background-color: blue;
+  /*background-image: url('https://images.pexels.com/photos/41162/moon-landing-apollo-11-nasa-buzz-aldrin-41162.jpeg?cs=srgb&dl=apollo-astronaut-landing-41162.jpg&fm=jpg');
+  /*background-image: url('https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?cs=srgb&dl=galaxy-milky-way-orbit-110854.jpg&fm=jpg');*/
+  /*background-position: 50% 50%;*/
+  /*background-size: contain;*/
+  /*background-repeat:repeat;*/
+  /*color: black;*/
+}
+
+example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.available-span{
+  font-size: 22px;
+}
+.load-more{
+  padding: 10px;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+.positive{
+  color: green;
+}

@@ -1,0 +1,40 @@
+<body>
+<div>
+  <br>
+  <table>
+    <tr>
+      <th class= "align-left  account-th"(click)="onSortAccount()">Account</th>
+
+      <th class= "align-right  available-th" (click)="onSortCash()">
+        <span *ngIf="ascendingCash"> v </span>
+        <span *ngIf="!ascendingCash"> ^ </span>
+        Available cash
+        <br>
+        <span class = "todays-change">Today's change</span>
+      </th>
+    </tr>
+    <!--   <tr *ngFor = "let column of data; let i=index">-->
+    <tr  *ngFor="let column of (data ? data.slice(0,shownumberofRows): [])" >
+    <td class="data-td acc-td">{{column.accountName}}</td>
+      <td class="data-td align-right">
+        <span class="available-span" >${{column.availableCash | number}} </span>
+        <br>
+        <span *ngIf="column.cashOne>0; else negative" class="positive">
+          +{{column.cashOne | number}}% / ${{column.cashTwo | number}}
+        </span>
+<!--          [ngStyle]="column.cashOne>0 ?{'color': 'green'}:{'color': 'red'}">-->
+<!--          {{column.cashOne | number}}% / ${{column.cashTwo | number}}-->
+        <ng-template #negative>
+          <span [ngStyle]="{'color': 'red'}">
+          {{column.cashOne | number}}% / ${{column.cashTwo | number}}
+          </span>
+        </ng-template>
+      </td>
+   </tr>
+    <tr class = "align-center data-td" *ngIf="showLoadMore">
+      <td colspan="2"  class= "load-more" (click)="onClickLoadMore()" >Load more</td>
+    </tr>
+  </table>
+</div>
+</body>
+
